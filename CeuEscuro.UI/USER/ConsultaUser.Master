@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ConsultaUser.master.cs" Inherits="CeuEscuro.UI.USER.ConsultaUser" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+     <link href="../USER/Resource/style.css" rel="stylesheet" />
+    <title>Ceu Escuro</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server"> 
+         <%--menu--%> 
+ <div class="menu">
+     <nav>
+         <ul class="menuInner">
+             <li>
+                 <img /src="../Img/logoAp.png" />
+             </li> 
+             <li>
+                  <a href="Consulta.aspx">User</a>
+             </li> 
+             <li>
+                 <a href="Consulta.aspx">Film</a>
+             </li> 
+             <li>
+                 <a href="../Login.aspx">Login</a>
+             </li>
+         </ul>
+     </nav>
+ </div> 
+   
+        <div class="container" >
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
